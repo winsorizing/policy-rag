@@ -1,0 +1,42 @@
+{
+  "last_updated": "2024-05-08",
+  "source": "주택도시기금",
+  "products": {
+    "디딤돌대출": {
+      "general": {
+        "income_limit": 60000000,
+        "house_price_limit": 900000000,
+        "max_amount": 200000000,
+        "ltv": 70,
+        "dti": 60
+      },
+      "first_home": {
+        "income_limit": 70000000,
+        "house_price_limit": 900000000,
+        "max_amount": 240000000,
+        "ltv": 80,
+        "ltv_regulation_area": 70,
+        "dti": 60
+      },
+      "newlywed": {
+        "income_limit": 85000000,
+        "house_price_limit": 900000000,
+        "max_amount": 320000000,
+        "ltv": 70,
+        "dti": 60,
+        "marriage_period": 7
+      },
+      "conditions": {
+        "age": 19,
+        "house_count": 0,
+        "move_in_period": 3
+      }
+    }
+  },
+  "merge_meta": {
+    "merged_at": "2026-05-14T00:22:13+00:00",
+    "note": "crawled 없음 — manual 복사(규칙 엔진 보조 파일)",
+    "date": "2026-05-14"
+  },
+  "date": "2026-05-14"
+}

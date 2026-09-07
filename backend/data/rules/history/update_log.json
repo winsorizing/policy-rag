@@ -1,0 +1,1140 @@
+{
+  "updateDate": "2026-05-14 09:22",
+  "updates": [
+    {
+      "updateDate": "2026-05-11 14:45",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:23",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:25",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:27",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:39",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:49",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 15:53",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:07",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:09",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:10",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:12",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:16",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:20",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:23",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:50",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:55",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:55",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 16:57",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 17:07",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 17:10",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/interest_rates.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 17:20",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 17:22",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-11 17:33",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 13:09",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 13:15",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 13:22",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 13:24",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 13:27",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-12 16:12",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "interest_rates.json",
+          "ok": true,
+          "skipped": true,
+          "path": null
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-13 13:15",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    },
+    {
+      "updateDate": "2026-05-14 09:22",
+      "all_ok": true,
+      "merge_dir": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge",
+      "files": [
+        {
+          "name": "regulation_areas.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/regulation_areas.json"
+        },
+        {
+          "name": "dti_dsr_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/dti_dsr_rules.json"
+        },
+        {
+          "name": "ltv_rules.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/ltv_rules.json"
+        },
+        {
+          "name": "policy_loans.json",
+          "ok": true,
+          "skipped": null,
+          "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/merge/policy_loans.json"
+        }
+      ]
+    }
+  ]
+}

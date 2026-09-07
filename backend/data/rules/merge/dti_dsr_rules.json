@@ -1,0 +1,73 @@
+{
+  "last_updated": "2026-05-14T00:22:13+00:00",
+  "source": "금융위원회 고시; 가계부채 관리 강화 방안 보도자료(PDF); KB Think 가이드 웹 (https://kbthink.com/loan-guide/ltv-dti-dsr.html); 병합(금융위원회 고시)",
+  "dti_rules": {
+    "투기과열지구": {
+      "0주택": 40,
+      "1주택": 40,
+      "2주택": 40,
+      "3주택_이상": 0
+    },
+    "조정대상지역": {
+      "0주택": 50,
+      "1주택": 50,
+      "2주택": 40,
+      "3주택_이상": 0
+    },
+    "일반지역": {
+      "전체": 60
+    }
+  },
+  "dsr_rules": {
+    "기본": {
+      "limit": 40,
+      "condition": "연소득 1.5억 미만"
+    },
+    "고소득자": {
+      "limit": 50,
+      "condition": "연소득 1.5억 이상"
+    }
+  },
+  "notes": {
+    "DTI": "총부채상환비율 = (연간 주택담보대출 원리금상환액 / 연소득) × 100",
+    "DSR": "총부채원리금상환비율 = (연간 모든 대출 원리금상환액 / 연소득) × 100",
+    "주담대_취급한도_산정": "수도권·규제지역 주택구입목적 주담대 최대한도 6억원; 실제 대출금액은 한도 내에서 LTV·DTI·DSR 비율 등에 따라 달라질 수 있음. (금융위 등 「가계부채 관리 강화 방안」 보도자료, '25.6.27.)",
+    "DSR_만기_보완취지": "수도권·규제지역 내 주담대 만기를 30년 이내로 제한하여 DSR 규제 우회를 방지. 시행 '25.6.28. (동 보도자료)",
+    "신용대출_한도": "신용대출 한도를 차주별 연소득 이내로 제한(수도권·규제지역 중심 가계부채 관리). 시행 '25.6.28. (동 보도자료; DSR 산정과 연계된 총부채 관리 취지)",
+    "DSR_KB참고_대출금액구간": "KB Think 안내: 대출금액 1억원 초과 구간에 DSR 40% 규제가 적용된다는 설명이 있음. 1억원 미만은 상품별로 상이할 수 있음. 실제 심사는 금융기관·당시 고시 기준을 확인할 것. (출처: https://kbthink.com/loan-guide/ltv-dti-dsr.html)"
+  },
+  "crawl_meta": {
+    "generated_at": "2026-05-14T09:21:58.876283",
+    "baseline": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/manual/dti_dsr_rules.json",
+    "web_guide_url": "https://kbthink.com/loan-guide/ltv-dti-dsr.html",
+    "sources": [
+      "file:///Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/crawler/pdf/250627(보도자료)가계부채 관리 방안.pdf",
+      "https://kbthink.com/loan-guide/ltv-dti-dsr.html"
+    ],
+    "press_pdf": {
+      "path": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/crawler/pdf/250627(보도자료)가계부채 관리 방안.pdf",
+      "used": true,
+      "chars": 6074,
+      "error": null
+    },
+    "extracted_dti": {
+      "투기과열지구": 40,
+      "조정대상지역": 50,
+      "일반지역": 60
+    },
+    "extracted_dsr": {
+      "기본": null,
+      "고소득자": null
+    }
+  },
+  "merge_meta": {
+    "merged_at": "2026-05-14T00:22:13+00:00",
+    "manual_last_updated": "2024-05-08",
+    "crawled_last_updated": "2026-05-14",
+    "base_source": "crawled",
+    "overlay_source": "manual",
+    "crawl_meta": null,
+    "date": "2026-05-14"
+  },
+  "date": "2026-05-14"
+}

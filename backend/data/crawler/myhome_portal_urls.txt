@@ -1,0 +1,133 @@
+# 마이홈포털(www.myhome.go.kr) URL 정리
+# - 2026-05-12 기준: `selectHousingFinanceView.do` HTML 내 gMenuList 경로 추출 + 청년·신혼 섹션 URL 보강
+# - 모바일: 가능한 경우 호스트만 `https://m.myhome.go.kr` 로 교체해 동일 경로 사용
+# - 메뉴명·경로는 포털 개편 시 바뀔 수 있음. 최종 조건은 각 페이지 및 기금·은행 안내를 확인할 것.
+
+# ---------------------------------------------------------------------------
+# A. 주택도시기금 · 대출(론) 상품 안내 (대표)
+# ---------------------------------------------------------------------------
+
+## 내집마련 디딤돌대출 (구입)
+https://www.myhome.go.kr/hws/portal/cont/selectSteppingStoneLoanView.do
+
+## 신생아 특례 디딤돌대출
+https://www.myhome.go.kr/hws/portal/cont/selectBabySpecialCaseStepStoneLoneView.do
+
+## 버팀목 전세자금대출
+https://www.myhome.go.kr/hws/portal/cont/selectSupLeaseLoanView.do
+
+## 신생아 특례 버팀목 전세(대출)
+https://www.myhome.go.kr/hws/portal/cont/selectBabySpecialCaseCrutchLoneView.do
+
+## 보금자리론
+https://www.myhome.go.kr/hws/portal/cont/selectSpecializedNestingView.do
+
+## 기금 오피스텔 구입자금
+https://www.myhome.go.kr/hws/portal/cont/selectFundsPurchaseOfficetelView.do
+
+## 주거안정 월세대출
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialMonthlyRentLoanView.do
+
+## 나누어진 모기지(공유저당) — 마이홈 안내
+https://www.myhome.go.kr/hws/portal/cont/selectSharingMortgageView.do
+
+## 손실분담저당 — 마이홈 안내
+https://www.myhome.go.kr/hws/portal/cont/selectLossSharingMortgageView.do
+
+## 주택연금 — 마이홈 안내
+https://www.myhome.go.kr/hws/portal/cont/selectHousingPensionView.do
+
+# ---------------------------------------------------------------------------
+# B. 청년·신혼부부 주거지원(별도 메뉴 트리에서 연결되는 금융 안내)
+# ---------------------------------------------------------------------------
+
+## 청년·신혼부부 주거지원(섹션; 정책버팀목·디딤돌 등 링크 포함)
+https://www.myhome.go.kr/hws/portal/cont/selectYouthPolicyCrutchLoanView.do
+
+## 청년 내집마련 디딤돌대출 등(섹션)
+https://www.myhome.go.kr/hws/portal/cont/selectYouthHousingStepStoneLoanView.do
+
+# ---------------------------------------------------------------------------
+# C. 운영 기관 · 주택금융 안내(목차/소개)
+# ---------------------------------------------------------------------------
+
+## 주택금융 종합 안내(목차 성격)
+https://www.myhome.go.kr/hws/portal/cont/selectHousingFinanceView.do
+
+## 한국주택금융공사
+https://www.myhome.go.kr/hws/portal/cont/selectFinanceCorporationView.do
+
+## 주택도시보증공사(HUG)
+https://www.myhome.go.kr/hws/portal/cont/selectGuaranteeCorporationView.do
+
+# ---------------------------------------------------------------------------
+# D. 부록 — `selectHousingFinanceView.do` 페이지에서 추출한 cont/select*View.do 전체
+#     (임대·분양·분쟁조정 등 주택복지 전반이 포함됨. 크롤 시 필터 필요)
+# ---------------------------------------------------------------------------
+
+https://www.myhome.go.kr/hws/portal/cont/selectAdministrativeWelfareCenter.do
+https://www.myhome.go.kr/hws/portal/cont/selectAphusManagetrubl.do
+https://www.myhome.go.kr/hws/portal/cont/selectBabySpecialCaseCrutchLoneView.do
+https://www.myhome.go.kr/hws/portal/cont/selectBabySpecialCaseStepStoneLoneView.do
+https://www.myhome.go.kr/hws/portal/cont/selectBuyRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectCharterRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectContRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectEmergencyHousingSupView.do
+https://www.myhome.go.kr/hws/portal/cont/selectFinanceCorporationView.do
+https://www.myhome.go.kr/hws/portal/cont/selectFraudulentSupplyReportView.do
+https://www.myhome.go.kr/hws/portal/cont/selectFundsPurchaseOfficetelView.do
+https://www.myhome.go.kr/hws/portal/cont/selectGuaranteeCorporationView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHappyHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseAdjustmentCost.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseBrokerageFeeView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseCompositionDelAdjMatters.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseDisputeMediationProcedure.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseFormat.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseLsTrubl.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseMediationProcedures.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseOftenQuestion.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousePublicAdjustmentCost.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseSalesAfterGuideView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseSalesProcedureGuideView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseStandardsPrecautions.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseTransMonthlyRentView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHouseTypeGuide.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingBenefitManagementView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingBenefitView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingFinanceView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingPensionView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingSupVulnerableGroupsView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousingSurveyInquiryView.do
+https://www.myhome.go.kr/hws/portal/cont/selectHousinghSurveyView.do
+https://www.myhome.go.kr/hws/portal/cont/selectIntegratedPubRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectLossSharingMortgageView.do
+https://www.myhome.go.kr/hws/portal/cont/selectMigrantSupCenter119View.do
+https://www.myhome.go.kr/hws/portal/cont/selectMyHomeCenterView.do
+https://www.myhome.go.kr/hws/portal/cont/selectNHTQualificationView.do
+https://www.myhome.go.kr/hws/portal/cont/selectNationalRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectNewHomeChoiceTypeView.do
+https://www.myhome.go.kr/hws/portal/cont/selectNewHomeShareTypeView.do
+https://www.myhome.go.kr/hws/portal/cont/selectNewlywedHopeTownView.do
+https://www.myhome.go.kr/hws/portal/cont/selectOpenPublicDataView.do
+https://www.myhome.go.kr/hws/portal/cont/selectPermanentRHView.do
+https://www.myhome.go.kr/hws/portal/cont/selectPubDormitoryView.do
+https://www.myhome.go.kr/hws/portal/cont/selectPubRentalHouseView.do
+https://www.myhome.go.kr/hws/portal/cont/selectPubSalesHousView.do
+https://www.myhome.go.kr/hws/portal/cont/selectRentalHouseholdSupView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResaleRestrictionView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialMonthlyRentLoanView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialWelfareCenterView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialWelfareHousingView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialWorkerQualificationView.do
+https://www.myhome.go.kr/hws/portal/cont/selectResidentialWorkerSystemView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSharingMortgageView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSpecializedNestingView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSteppingStoneLoanView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupAbnormalResidentialView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupInfoView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupLeaseLoanView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupResidentsAbnormalView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupSelfHouseholdsView.do
+https://www.myhome.go.kr/hws/portal/cont/selectSupplyInstitutionView.do
+https://www.myhome.go.kr/hws/portal/cont/selectWelfareHousingView.do
+https://www.myhome.go.kr/hws/portal/cont/selectlongTermLeaseHouseView.do

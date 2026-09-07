@@ -1,0 +1,126 @@
+{
+  "last_updated": "2026-05-14",
+  "source": "금융위원회 고시 제2024-003호; 웹크롤 병합 (2026-05-14)",
+  "effective_date": "2024-01-01",
+  "rules": {
+    "투기과열지구": {
+      "price_threshold": 900000000,
+      "below_threshold": {
+        "무주택_생애최초": {
+          "ltv": 80,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "무주택": {
+          "ltv": 50,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 50,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      },
+      "above_threshold": {
+        "무주택_생애최초": {
+          "ltv": 50,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "일반": {
+          "ltv": 40,
+          "condition": "일반"
+        }
+      }
+    },
+    "조정대상지역": {
+      "price_threshold": 900000000,
+      "below_threshold": {
+        "무주택_생애최초": {
+          "ltv": 80,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "무주택": {
+          "ltv": 70,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 60,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      },
+      "above_threshold": {
+        "무주택": {
+          "ltv": 60,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 50,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      }
+    },
+    "일반지역": {
+      "price_threshold": 600000000,
+      "below_threshold": {
+        "생애최초": {
+          "ltv": 80,
+          "condition": "생애최초 주택 구입"
+        },
+        "일반": {
+          "ltv": 80,
+          "condition": "일반"
+        }
+      },
+      "above_threshold": {
+        "일반": {
+          "ltv": 80,
+          "condition": "일반"
+        }
+      }
+    }
+  },
+  "notes": {
+    "LTV": "주택담보대출비율 = (대출금액 / 주택가격) × 100",
+    "생애최초": "무주택 세대주로서 생애 최초로 주택을 구입하는 경우"
+  },
+  "crawl_meta": {
+    "generated_at": "2026-05-14T09:22:05.021629",
+    "baseline": "/Users/anjahyun/공부/매력일자리/포트폴리오/policy-rag/backend/data/rules/manual/ltv_rules.json",
+    "sources": [
+      "https://www.molit.go.kr/policy/main.jsp",
+      "https://www.molit.go.kr/policy/stable/sta_b_03.jsp",
+      "https://www.molit.go.kr/policy/stable/sta_b_02.jsp",
+      "https://www.molit.go.kr/policy/stable/sta_a_01.jsp",
+      "https://www.molit.go.kr/policy/stable/sta_b_01.jsp",
+      "https://www.molit.go.kr/search/search.jsp?q=LTV 주택담보대출",
+      "https://www.molit.go.kr/search/search.jsp?q=생애최초 LTV",
+      "https://www.molit.go.kr/search/search.jsp?q=규제지역 LTV"
+    ],
+    "extracted_ltv_candidates": {
+      "first_home": 80,
+      "generic": 80
+    }
+  }
+}

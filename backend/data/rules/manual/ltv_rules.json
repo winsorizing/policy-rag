@@ -1,0 +1,108 @@
+{
+  "last_updated": "2024-05-08",
+  "source": "금융위원회 고시 제2024-003호",
+  "effective_date": "2024-01-01",
+  "rules": {
+    "투기과열지구": {
+      "price_threshold": 900000000,
+      "below_threshold": {
+        "무주택_생애최초": {
+          "ltv": 70,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "무주택": {
+          "ltv": 50,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 50,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      },
+      "above_threshold": {
+        "무주택_생애최초": {
+          "ltv": 50,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "일반": {
+          "ltv": 40,
+          "condition": "일반"
+        }
+      }
+    },
+    "조정대상지역": {
+      "price_threshold": 900000000,
+      "below_threshold": {
+        "무주택_생애최초": {
+          "ltv": 80,
+          "condition": "무주택 세대주 + 생애최초 주택 구입"
+        },
+        "무주택": {
+          "ltv": 70,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 60,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      },
+      "above_threshold": {
+        "무주택": {
+          "ltv": 60,
+          "condition": "무주택 세대주"
+        },
+        "1주택": {
+          "ltv": 50,
+          "condition": "1주택 보유"
+        },
+        "2주택": {
+          "ltv": 30,
+          "condition": "2주택 보유"
+        },
+        "3주택_이상": {
+          "ltv": 0,
+          "condition": "3주택 이상 보유 (대출 불가)"
+        }
+      }
+    },
+    "일반지역": {
+      "price_threshold": 600000000,
+      "below_threshold": {
+        "생애최초": {
+          "ltv": 80,
+          "condition": "생애최초 주택 구입"
+        },
+        "일반": {
+          "ltv": 70,
+          "condition": "일반"
+        }
+      },
+      "above_threshold": {
+        "일반": {
+          "ltv": 70,
+          "condition": "일반"
+        }
+      }
+    }
+  },
+  "notes": {
+    "LTV": "주택담보대출비율 = (대출금액 / 주택가격) × 100",
+    "생애최초": "무주택 세대주로서 생애 최초로 주택을 구입하는 경우"
+  }
+}

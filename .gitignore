@@ -1,0 +1,29 @@
+# AIHub 대용량 학습 데이터
+backend/data/aihub/training/
+backend/data/aihub/validation/
+backend/data/processed/
+
+# Python 가상환경
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 환경변수 (API 키 등 민감 정보)
+backend/.env
+frontend/.env
+.env
+*.env
+
+# Node.js
+frontend/node_modules/
+slidev/node_modules/
+node_modules/
+
+# 빌드 결과물
+frontend/dist/
+slidev/dist/
+slidev/.output/
