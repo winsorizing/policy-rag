@@ -1,8 +1,23 @@
 # rule_engine/loan_calculator.py
 
-from typing import Dict, Tuple
+from typing import Any, Dict, Tuple
 from datetime import datetime
 from .data_loader import RuleDataLoader
+
+
+def _select_rule_by_house_count(
+    price_rules: Dict[str, Any], house_count: int, is_first_home: bool
+) -> Dict[str, Any]:
+    """주택 보유 수·생애최초 여부에 따라 LTV 규칙 딕셔너리 반환."""
+    if house_count == 0 and is_first_home:
+        return price_rules["무주택_생애최초"]
+    if house_count == 0:
+        return price_rules["무주택"]
+    if house_count == 1:
+        return price_rules["1주택"]
+    if house_count == 2:
+        return price_rules["2주택"]
+    return price_rules["3주택_이상"]
 
 
 class LoanCalculator:
@@ -63,16 +78,7 @@ class LoanCalculator:
         # 주택 보유 상태별 LTV 결정
         if regulation_type == "투기과열지구":
             if house_price <= price_threshold:
-                if house_count == 0 and is_first_home:
-                    rule = price_rules["무주택_생애최초"]
-                elif house_count == 0:
-                    rule = price_rules["무주택"]
-                elif house_count == 1:
-                    rule = price_rules["1주택"]
-                elif house_count == 2:
-                    rule = price_rules["2주택"]
-                else:
-                    rule = price_rules["3주택_이상"]
+                rule = _select_rule_by_house_count(price_rules, house_count, is_first_home)
             else:
                 if house_count == 0 and is_first_home:
                     rule = price_rules["무주택_생애최초"]
@@ -81,25 +87,9 @@ class LoanCalculator:
 
         elif regulation_type == "조정대상지역":
             if house_price <= price_threshold:
-                if house_count == 0 and is_first_home:
-                    rule = price_rules["무주택_생애최초"]
-                elif house_count == 0:
-                    rule = price_rules["무주택"]
-                elif house_count == 1:
-                    rule = price_rules["1주택"]
-                elif house_count == 2:
-                    rule = price_rules["2주택"]
-                else:
-                    rule = price_rules["3주택_이상"]
+                rule = _select_rule_by_house_count(price_rules, house_count, is_first_home)
             else:
-                if house_count == 0:
-                    rule = price_rules["무주택"]
-                elif house_count == 1:
-                    rule = price_rules["1주택"]
-                elif house_count == 2:
-                    rule = price_rules["2주택"]
-                else:
-                    rule = price_rules["3주택_이상"]
+                rule = _select_rule_by_house_count(price_rules, house_count, False)
 
         else:  # 일반지역
             if house_price <= price_threshold:

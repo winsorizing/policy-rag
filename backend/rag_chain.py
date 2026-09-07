@@ -292,7 +292,56 @@ def ask_loan_explanation_rag(
     }
 
 
-class RealEstateRAG:
+class _BaseRAG:
+    """ask() / ask_loan_explanation() 공통 구현 — 서브클래스가 qa_chain·llm·vs_manager를 설정."""
+
+    llm_model_label: str
+    qa_chain: Any
+    llm: Any
+    vs_manager: "VectorStoreManager"
+
+    def ask(self, question: str) -> dict[str, Any]:
+        try:
+            _print_llm_input(
+                f"{type(self).__name__}.ask · RetrievalQA query → 템플릿 {{question}} 자리",
+                question,
+            )
+            try:
+                result = self.qa_chain.invoke({"query": question})
+            except Exception:
+                result = self.qa_chain({"query": question})
+            docs = result.get("source_documents") or []
+            sources = _sources_from_docs(docs)
+            raw = str(result.get("result") or "")
+            actions = TextCleaner.extract_action_items(raw)
+            cleaned = TextCleaner.clean_rag_response(raw)
+            return {
+                "answer": cleaned,
+                "sources": sources,
+                "action_items": actions,
+            }
+        except Exception as e:
+            return {
+                "answer": (
+                    "RAG(검색·생성) 단계에서 오류가 발생했습니다.\n"
+                    f"({type(e).__name__}: {e})"
+                ),
+                "sources": [],
+                "action_items": [],
+            }
+
+    def ask_loan_explanation(self, calculation_result: Mapping[str, Any]) -> dict[str, Any]:
+        vs = self.vs_manager.vector_store
+        if vs is None:
+            return {
+                "answer": "벡터 스토어가 로드되지 않아 대출 설명을 생성할 수 없습니다.",
+                "sources": [],
+                "action_items": [],
+            }
+        return ask_loan_explanation_rag(self.llm, vs, calculation_result)
+
+
+class RealEstateRAG(_BaseRAG):
     """로컬 Ollama 챗 + Chroma 검색."""
 
     def __init__(self) -> None:
@@ -318,48 +367,8 @@ class RealEstateRAG:
             return_source_documents=True,
         )
 
-    def ask(self, question: str) -> dict[str, Any]:
-        try:
-            _print_llm_input(
-                "RealEstateRAG.ask · RetrievalQA query → 템플릿 {question} 자리",
-                question,
-            )
-            try:
-                result = self.qa_chain.invoke({"query": question})
-            except Exception:
-                result = self.qa_chain({"query": question})
-            docs = result.get("source_documents") or []
-            sources = _sources_from_docs(docs)
-            raw = str(result.get("result") or "")
-            actions = TextCleaner.extract_action_items(raw)
-            cleaned = TextCleaner.clean_rag_response(raw)
-            return {
-                "answer": cleaned,
-                "sources": sources,
-                "action_items": actions,
-            }
-        except Exception as e:
-            return {
-                "answer": (
-                    "RAG(검색·생성) 단계에서 오류가 발생했습니다.\n"
-                    f"({type(e).__name__}: {e})"
-                ),
-                "sources": [],
-                "action_items": [],
-            }
 
-    def ask_loan_explanation(self, calculation_result: Mapping[str, Any]) -> dict[str, Any]:
-        vs = self.vs_manager.vector_store
-        if vs is None:
-            return {
-                "answer": "벡터 스토어가 로드되지 않아 대출 설명을 생성할 수 없습니다.",
-                "sources": [],
-                "action_items": [],
-            }
-        return ask_loan_explanation_rag(self.llm, vs, calculation_result)
-
-
-class RealEstateRAGOpenAI:
+class RealEstateRAGOpenAI(_BaseRAG):
     """OpenAI 챗 + 동일 Chroma — OPENAI_API_KEY 필요."""
 
     def __init__(self) -> None:
@@ -384,43 +393,3 @@ class RealEstateRAGOpenAI:
             chain_type_kwargs={"prompt": self.prompt},
             return_source_documents=True,
         )
-
-    def ask(self, question: str) -> dict[str, Any]:
-        try:
-            _print_llm_input(
-                "RealEstateRAGOpenAI.ask · RetrievalQA query → 템플릿 {question} 자리",
-                question,
-            )
-            try:
-                result = self.qa_chain.invoke({"query": question})
-            except Exception:
-                result = self.qa_chain({"query": question})
-            docs = result.get("source_documents") or []
-            sources = _sources_from_docs(docs)
-            raw = str(result.get("result") or "")
-            actions = TextCleaner.extract_action_items(raw)
-            cleaned = TextCleaner.clean_rag_response(raw)
-            return {
-                "answer": cleaned,
-                "sources": sources,
-                "action_items": actions,
-            }
-        except Exception as e:
-            return {
-                "answer": (
-                    "RAG(검색·생성) 단계에서 오류가 발생했습니다.\n"
-                    f"({type(e).__name__}: {e})"
-                ),
-                "sources": [],
-                "action_items": [],
-            }
-
-    def ask_loan_explanation(self, calculation_result: Mapping[str, Any]) -> dict[str, Any]:
-        vs = self.vs_manager.vector_store
-        if vs is None:
-            return {
-                "answer": "벡터 스토어가 로드되지 않아 대출 설명을 생성할 수 없습니다.",
-                "sources": [],
-                "action_items": [],
-            }
-        return ask_loan_explanation_rag(self.llm, vs, calculation_result)
