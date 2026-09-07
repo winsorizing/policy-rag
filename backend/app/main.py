@@ -35,7 +35,7 @@ def _rag_debug_stub_print(label: str, text: str) -> None:
     """RAG 스텁일 때도 질문·payload 확인용 (``rag_chain`` 과 동일 ``RAG_DEBUG_PRINT``)."""
     import sys
 
-    v = os.getenv("RAG_DEBUG_PRINT", "1").strip().lower()
+    v = os.getenv("RAG_DEBUG_PRINT", "0").strip().lower()
     if v in ("0", "false", "off", "no"):
         return
     n = len(text)

@@ -126,8 +126,8 @@ _LOAN_EXPLAIN_TEMPLATE = """당신은 친절한 부동산 대출 상담사입니
 
 
 def _rag_debug_print_enabled() -> bool:
-    """기본 ON. 끄려면 ``RAG_DEBUG_PRINT=0``."""
-    v = os.getenv("RAG_DEBUG_PRINT", "1").strip().lower()
+    """기본 OFF. 켜려면 ``RAG_DEBUG_PRINT=1``."""
+    v = os.getenv("RAG_DEBUG_PRINT", "0").strip().lower()
     return v not in ("0", "false", "off", "no")
 
 

@@ -27,3 +27,6 @@ node_modules/
 frontend/dist/
 slidev/dist/
 slidev/.output/
+
+# 벡터 DB (런타임 생성 파생 파일)
+backend/chroma_db/
