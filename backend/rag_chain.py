@@ -243,7 +243,7 @@ def ask_loan_explanation_rag(
 
     retrieval_query = f"{regulation_type} {limiting_factor} 제한 이유와 해결 방법"
     _print_llm_input("ask_loan_explanation · Chroma 검색 쿼리", retrieval_query)
-    retriever = vector_store.as_retriever(search_kwargs={"k": 3})
+    retriever = vector_store.as_retriever(search_kwargs={"k": int(os.getenv("RAG_RETRIEVAL_K", "3"))})
     docs = _retriever_docs(retriever, retrieval_query)
     context = _docs_to_context(docs)
 
@@ -313,7 +313,7 @@ class RealEstateRAG:
         self.qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type="stuff",
-            retriever=self.vs_manager.vector_store.as_retriever(search_kwargs={"k": 3}),
+            retriever=self.vs_manager.vector_store.as_retriever(search_kwargs={"k": int(os.getenv("RAG_RETRIEVAL_K", "3"))}),
             chain_type_kwargs={"prompt": self.prompt},
             return_source_documents=True,
         )
@@ -380,7 +380,7 @@ class RealEstateRAGOpenAI:
         self.qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type="stuff",
-            retriever=self.vs_manager.vector_store.as_retriever(search_kwargs={"k": 3}),
+            retriever=self.vs_manager.vector_store.as_retriever(search_kwargs={"k": int(os.getenv("RAG_RETRIEVAL_K", "3"))}),
             chain_type_kwargs={"prompt": self.prompt},
             return_source_documents=True,
         )

@@ -164,9 +164,11 @@ export interface RefreshKnowledgeResponse {
 
 /** 크롤링 + 규칙 merge + 벡터DB 전체 재빌드(백엔드에서 항상 강제 실행). */
 export const refreshKnowledge = async (): Promise<RefreshKnowledgeResponse> => {
+  const adminKey = import.meta.env.VITE_ADMIN_SECRET_KEY ?? "";
   const response = await apiClient.post<RefreshKnowledgeResponse>(
     "/api/refresh-knowledge",
-    null
+    null,
+    adminKey ? { headers: { "X-Admin-Key": adminKey } } : undefined
   );
   return response.data;
 };

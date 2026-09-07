@@ -11,9 +11,9 @@ class UserProfile(BaseModel):
     first_time_buyer: bool = Field(description="생애최초 주택구입 여부")
     married: bool = Field(description="혼인 여부")
     house_count: int = Field(default=1, ge=0, description="보유 주택 수")
-    annual_income: float = Field(description="연소득(원)")
+    annual_income: float = Field(ge=0, description="연소득(원)")
     region: str = Field(description="대상 주택 지역")
-    house_price: float = Field(description="주택 가격(원)")
+    house_price: float = Field(ge=0, description="주택 가격(원)")
     product_cap_amount: float = Field(default=0, ge=0, description="상품별 최대 한도(원, 없으면 0)")
 
 

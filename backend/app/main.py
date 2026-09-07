@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, Header, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.schemas import (
@@ -51,16 +51,37 @@ def _rag_debug_stub_print(label: str, text: str) -> None:
 
 app = FastAPI()
 
+_cors_origins_env = os.getenv("CORS_ORIGINS", "")
+_cors_origins = (
+    [o.strip() for o in _cors_origins_env.split(",") if o.strip()]
+    if _cors_origins_env.strip()
+    else ["http://localhost:5173", "http://127.0.0.1:5173"]
+)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=_cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+def _verify_admin(x_admin_key: str | None) -> None:
+    """ADMIN_SECRET_KEY가 설정된 경우 헤더 일치 여부 확인."""
+    secret = os.getenv("ADMIN_SECRET_KEY", "").strip()
+    if not secret:
+        return
+    if x_admin_key != secret:
+        raise HTTPException(status_code=401, detail="관리자 인증이 필요합니다.")
+
+
+@app.on_event("startup")
+async def _startup_init_rag() -> None:
+    """서버 시작 시 RAG를 미리 로드해 첫 요청 지연을 방지."""
+    import asyncio
+
+    loop = asyncio.get_event_loop()
+    await loop.run_in_executor(None, get_rag)
 
 
 @app.get("/")
@@ -501,7 +522,9 @@ def run_crawlers_endpoint(
         True,
         description="False면 항상 전체 크롤. True(기본)이면 merge/update_log가 오늘(KST)이면 크롤 생략",
     ),
+    x_admin_key: str | None = Header(default=None),
 ) -> dict[str, Any]:
+    _verify_admin(x_admin_key)
     """
     `data/crawler/run_crawler.py` 의 `run_all_crawlers` 실행.
     규제지역·DTI/DSR JSON 갱신 등(네트워크·대상 사이트 응답에 따라 수십 초~수분 소요 가능).
@@ -566,13 +589,16 @@ def run_crawlers_endpoint(
 
 
 @app.post("/api/refresh-knowledge")
-def refresh_knowledge() -> dict[str, Any]:
+def refresh_knowledge(
+    x_admin_key: str | None = Header(default=None),
+) -> dict[str, Any]:
     """
     상단 새로고침 버튼용 — **항상** 전체 실행:
     규제·DTI/DSR 크롤 및 merge(``update_log.json``) → AIHub·규칙 기반 Vector DB 재빌드.
 
     (오늘 이미 merge 반영 여부와 무관하게 크롤·벡터 단계를 생략하지 않음.)
     """
+    _verify_admin(x_admin_key)
     global _rag_singleton, _rag_openai_singleton
     try:
         stats = _rebuild_vector_db_with_latest_crawled(force=True)
