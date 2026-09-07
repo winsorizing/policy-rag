@@ -26,6 +26,12 @@ import {
 } from './types';
 import { healthCheck, refreshKnowledge, fetchRulesUpdateLog } from './services/api';
 
+const REFRESH_STEPS = [
+  '규제지역·DTI/DSR 데이터 크롤링 중...',
+  '규칙 파일 병합 중...',
+  '벡터 DB 재빌드 중...',
+];
+
 const App: React.FC = () => {
   const [insightLoading, setInsightLoading] = useState(false);
   const [insight, setInsight] = useState<PolicyResponse | null>(null);
@@ -35,6 +41,7 @@ const App: React.FC = () => {
   const [insightError, setInsightError] = useState<string | null>(null);
   const [showSaveAlert, setShowSaveAlert] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  const [refreshStepIdx, setRefreshStepIdx] = useState(0);
   const [refreshMessage, setRefreshMessage] = useState<string | null>(null);
   const [serverStatus, setServerStatus] = useState<'connected' | 'disconnected'>('disconnected');
   /** ``update_log.json`` 의 ``updateDate`` (없으면 null → UI 에 '-') */
@@ -99,6 +106,10 @@ const App: React.FC = () => {
   };
 
   const handleRefreshKnowledge = async () => {
+    setRefreshStepIdx(0);
+    const stepTimer = setInterval(() => {
+      setRefreshStepIdx(prev => Math.min(prev + 1, REFRESH_STEPS.length - 1));
+    }, 25000);
     try {
       setRefreshing(true);
       const result = await refreshKnowledge();
@@ -119,6 +130,7 @@ const App: React.FC = () => {
     } catch (e) {
       setRefreshMessage(e instanceof Error ? e.message : '업데이트 중 오류가 발생했습니다.');
     } finally {
+      clearInterval(stepTimer);
       setRefreshing(false);
     }
   };
@@ -130,24 +142,20 @@ const App: React.FC = () => {
           disableGutters
           sx={{
             px: { xs: 1.5, sm: 2 },
-            position: 'relative',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
             gap: 1,
             minHeight: { xs: 56, sm: 64 },
           }}
         >
+          {/* 왼쪽: 새로고침 버튼 + 업데이트 날짜 */}
           <Box
             sx={{
-              flex: '0 1 auto',
+              flex: 1,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'flex-start',
-              columnGap: 0,
-              rowGap: 0.25,
+              gap: 0.5,
               minWidth: 0,
-              zIndex: 1,
             }}
           >
             <Tooltip title="규칙 크롤·merge·벡터 DB 전체 재빌드(매번 전체 실행)">
@@ -172,18 +180,34 @@ const App: React.FC = () => {
               component="div"
               sx={{
                 fontWeight: 600,
-                flex: '0 1 auto',
                 minWidth: 0,
-                maxWidth: { xs: 200, sm: 240, md: 280 },
-                whiteSpace: 'normal',
-                overflowWrap: 'anywhere',
-                wordBreak: 'break-word',
-                lineHeight: 1.35,
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
               }}
             >
-              최근 업데이트({rulesMergeUpdateLabel ?? '-'})
+              업데이트({rulesMergeUpdateLabel ?? '-'})
             </Typography>
           </Box>
+
+          {/* 가운데: 타이틀 */}
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              flex: '0 0 auto',
+              fontWeight: 700,
+              textAlign: 'center',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              maxWidth: { xs: 160, sm: 300 },
+            }}
+          >
+            🏠 AI 부동산 대출 컨설턴트
+          </Typography>
+
+          {/* 오른쪽: 서버 상태 */}
           <Box
             sx={{
               flex: 1,
@@ -192,7 +216,6 @@ const App: React.FC = () => {
               justifyContent: 'flex-end',
               gap: 1,
               minWidth: 0,
-              zIndex: 1,
             }}
           >
             <Box
@@ -208,27 +231,6 @@ const App: React.FC = () => {
               {serverStatus === 'connected' ? '서버 연결됨' : '서버 연결 끊김'}
             </Typography>
           </Box>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%, -50%)',
-              fontWeight: 700,
-              px: 1,
-              textAlign: 'center',
-              whiteSpace: 'nowrap',
-              maxWidth: { xs: 'min(92vw, 280px)', sm: '50vw' },
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              pointerEvents: 'none',
-              zIndex: 2,
-            }}
-          >
-            🏠 AI 부동산 대출 컨설턴트
-          </Typography>
         </Toolbar>
         {refreshing ? (
           <Box
@@ -244,24 +246,33 @@ const App: React.FC = () => {
           >
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25, mb: 1 }}>
               <CircularProgress size={20} thickness={4} sx={{ color: 'common.white' }} />
-              <Typography
-                variant="body2"
-                sx={{
-                  fontWeight: 600,
-                  color: 'common.white',
-                  flex: 1,
-                  letterSpacing: '0.01em',
-                  animation: 'refreshBusyPulse 1.35s ease-in-out infinite',
-                  '@keyframes refreshBusyPulse': {
-                    '0%, 100%': { opacity: 0.75 },
-                    '50%': { opacity: 1 },
-                  },
-                }}
-              >
-                데이터 최신화 진행 중 — 규제 크롤·병합·벡터 DB
-              </Typography>
+              <Box sx={{ flex: 1 }}>
+                <Typography
+                  variant="caption"
+                  sx={{ color: 'rgba(255,255,255,0.7)', display: 'block' }}
+                >
+                  {refreshStepIdx + 1} / {REFRESH_STEPS.length} 단계
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    fontWeight: 600,
+                    color: 'common.white',
+                    letterSpacing: '0.01em',
+                    animation: 'refreshBusyPulse 1.35s ease-in-out infinite',
+                    '@keyframes refreshBusyPulse': {
+                      '0%, 100%': { opacity: 0.75 },
+                      '50%': { opacity: 1 },
+                    },
+                  }}
+                >
+                  {REFRESH_STEPS[refreshStepIdx]}
+                </Typography>
+              </Box>
             </Box>
             <LinearProgress
+              variant="determinate"
+              value={((refreshStepIdx + 1) / REFRESH_STEPS.length) * 100}
               color="inherit"
               sx={{
                 height: 4,
@@ -306,7 +317,7 @@ const App: React.FC = () => {
             ⚠️ 본 서비스는 참고용이며, 최종 대출 조건은 금융기관에 문의하세요.
           </Typography>
           <Typography variant="caption" color="text.secondary">
-            데이터 출처: 국토교통부, 금융위원회 | 최종 업데이트: 2024.04
+            데이터 출처: 국토교통부, 금융위원회 | 최종 업데이트: {rulesMergeUpdateLabel ?? '-'}
           </Typography>
         </Box>
       </Container>
